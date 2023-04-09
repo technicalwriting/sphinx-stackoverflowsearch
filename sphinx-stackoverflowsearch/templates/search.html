@@ -1,0 +1,6 @@
+{%- extends "!search.html" %}
+{% block extrahead %}
+{{ super() }}
+<!-- TODO: `_static` probably needs to be configurable. -->
+<script src="{{ pathto('_static/stackoverflow-search.js', 1) }}"></script>
+{% endblock extrahead %}
